@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuSiCaLy - Music Academy</title>
+    <link rel="stylesheet" href="style1.css">
+    <Style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0b344a;
+        }
+        .main {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url('3.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+        .main {
+            width: 100%;
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #333;
+            padding: 15px 20px;
+            color: white;
+        }
+        .icon h2 {
+    color: cornflowerblue;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.icon h5 {
+    color: rgb(237, 100, 203);
+    font-size: 14px;
+}
+
+        .menu ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu ul li {
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: bisque;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .menu ul li a:hover {
+            color: brown;
+    }
+        .menu-icon {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .content {
+            padding: 50px;
+            background: white;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .content h1 {
+            color: #333;
+            line-height: 3.o;
+        }
+        .content p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 768px) {
+            .menu ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background: #333;
+            }
+            .menu ul.active {
+                display: flex;
+            }
+            .menu ul li {
+                text-align: center;
+                padding: 10px 0;
+            }
+            .menu-icon {
+                display: block;
+            }
+        }
+        .course-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .course {
+            display: flex;
+            align-items: center;
+            background: #eaeaea;
+            padding: 15px;
+            border-radius: 5px;
+            flex-direction: column;
+            cursor: pointer;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .course img {
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .course h3 {
+            margin: 0;
+        }
+        .course p {
+            color: black;
+            display: none;
+            margin-top: 10px;
+        }
+        .dropdown {
+            text-align: center;
+            background: #28a745;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        h3, p {
+        color: black;
+    }
+
+    </Style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2>MuSiCaLy</h2>
+                <h5>Music Academy</h5>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about4.html">ABOUT</a></li>
+                    <li><a href="service3.html">SERVICE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="index.php">LOGIN</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile menu icon -->
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </div>
+
+        <div class="content">
+            <h1>About MuSiCaLy</h1>
+            <p>Welcome to MuSiCaLy Music Academy, a place where music lovers can learn and grow. Our academy offers comprehensive music education, helping students explore their passion for melody and rhythm.</p>
+            <p>We provide training in various musical instruments and vocal music, ensuring a holistic learning experience. Join us and embark on your musical journey today!</p>
+        </div>
+
+        <div class="content">
+            <h1>Our Mission</h1>
+            <p>At MuSiCaLy Academy, our mission is to inspire and nurture musical talent. We believe that music is for everyone, 
+            and our expert instructors are committed to guiding each student on their unique musical journey.</p>
+        </div>
+        <div class="content">
+            <h1>Why Choose Us?</h1>
+                <p>Experienced & Passionate Instructors</p>
+                <p>Learn Instruments Like Guitar, Piano, Violin & More</p>
+                <p>Online & Offline Classes Available</p>
+                <p> Performance Opportunities & Music Events</p>
+                <p>Certification Upon Course Completion</p>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".menu").classList.toggle("active");
+        }
+    </script>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2>MuSiCaLy</h2>
+                <h5>Music Academy</h5>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="about4.html">ABOUT</a></li>
+                    <li><a href="service3.html">SERVICE</a></li>
+                    <li><a href="contact.php">CONTACT</a></li>
+                    <li><a href="index.php">LOGIN</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2 class="section-title">Explore Our Courses</h2>
+        </div>
+
+        <div class="course-list">
+            <div class="course" onclick="toggleDescription(this)">
+                <img src="instru.jpg" alt="Instrumental Training">
+                <h3>Beginner Instrumental Training </h3>
+                <div class="dropdown">View Details</div>
+                <p>Beginner Instrumental Training is the perfect starting point for anyone looking to learn a musical instrument.
+                     This course provides a structured and engaging introduction to instruments like the guitar, piano, violin, and drums. Students will learn the fundamentals, including proper hand positioning, posture, and essential playing techniques.
+                     The focus is on building confidence and comfort with the instrument while gradually developing musical skills..</p>
+            </div>
+
+            <div class="course" onclick="toggleDescription(this)">
+                <img src="vocal.jpg" alt="Vocal Training">
+                <h3>Basic Vocal Training </h3>
+                <div class="dropdown">View Details</div>
+                <p>Basic Vocal Training is designed for beginners who want to develop their singing abilities and build a strong vocal foundation. This course covers essential techniques such as breath control, pitch accuracy, vocal warm-ups, and posture. 
+                    Students will learn how to use their diaphragm effectively to produce a clear and powerful voice while avoiding strain and fatigue.
+                    The course also introduces vocal exercises that enhance range, tone quality, and flexibility.
+                     Through guided practice, students will improve their ability to hold notes, 
+                     transition between pitches smoothly, and sing with better clarity.</p>
+            </div>
+
+            <div class="course" onclick="toggleDescription(this)">
+                <img src="theory.jpg" alt="Music Theory">
+                <h3>Music Theory Basics </h3>
+                <div class="dropdown">View Details</div>
+                <p>Music Theory Basics is an essential course for anyone looking to understand the fundamentals of music. It covers key concepts such as musical notation, rhythm, scales, chords, and key signatures. 
+                     will learn how to read sheet music, recognize different note values, and understand time signatures, which are crucial for playing and composing music accurately.
+                    The course also introduces the concept of harmony and melody, teaching how notes interact to create pleasing sounds.
+                     Students will explore major and minor scales, intervals, and chord progressions, which form the building blocks of music composition.</p>
+            </div>
+
+            <div class="course" onclick="toggleDescription(this)">
+                <img src="learn.jpg" alt="Singing Styles">
+                <h3>Introduction to Singing Styles </h3>
+                <div class="dropdown">View Details</div>
+                <p>Introduction to Singing Styles is a course designed to help students explore various vocal genres and develop their unique singing voice. 
+                    It introduces different singing styles such as classical, pop, rock, jazz, folk, R&B, and musical theatre, highlighting the techniques and characteristics that define each genre.
+                    Students will learn how vocal techniques vary across styles—for example, the controlled vibrato in classical singing, the belting technique in musical theatre, or the breathy tone in jazz. </p>
+            </div>
+
+            <div class="course" onclick="toggleDescription(this)">
+                <img src="lyrics.jpg" alt="Songwriting & Lyrics">
+                <h3>Simple Songwriting & Lyrics </h3>
+                <div class="dropdown">View Details</div>
+                <p>Simple Songwriting & Lyrics is a beginner-friendly course designed to help students express their creativity through music. 
+                    This course covers the essential elements of songwriting, including melody creation, chord progressions, and lyrical storytelling.
+                     Students will learn how to structure a song, from writing verses and choruses to crafting catchy hooks that resonate with listeners.
+                     The course also explores different lyrical styles, helping students find their unique voice and message.</p>
+            </div>
+
+            <div class="course" onclick="toggleDescription(this)">
+                <img src="rhythm.jpeg" alt="Rhythm & Percussion">
+                <h3> Rhythm & Percussion </h3>
+                <div class="dropdown">View Details</div>
+                <p>Rhythm & Percussion is a fundamental course designed to help students understand the core of musical timing and beat. Rhythm is the heartbeat of music, and this course focuses on developing a strong sense of timing, coordination, and groove.
+                     Students will explore essential rhythmic patterns, time signatures, and counting techniques that apply to all forms of music.
+                     Students will learn basic drumming techniques, hand coordination exercises, and how to play different beats and fills.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDescription(course) {
+            let description = course.querySelector("p");
+            description.style.display = description.style.display === "none" || description.style.display === "" ? "block" : "none";
+        }
+    </script>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2>MuSiCaLy</h2>
+                <h5>Music Academy</h5>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about4.html">ABOUT</a></li>
+                    <li><a href="service3.html">SERVICE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="index.php">LOGIN</a></li>
+                </ul>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </div>
+
+        <div class="content">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Get in touch with us using the form below or reach out via email or phone.</p>
+            <div class="container">
+                <form action="#" method="post">
+                    <div class="input-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <p><strong>Address:</strong> 123 Music Street, Bangalore, India</p>
+                <p><strong>Phone:</strong> +91 98765 43210</p>
+                <p><strong>Email:</strong> contact@musicaly.com</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".menu").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
+
+
+

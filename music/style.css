@@ -1,0 +1,178 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Background Styling */
+body {
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url('3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form Container */
+.container {
+    background: #fff;
+    width: 90%;
+    max-width: 450px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 1, 0.9);
+}
+
+/* Title */
+.form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.3rem;
+    margin-bottom: 0.4rem;
+}
+
+/* Input Fields */
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+}
+
+input {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid #757575;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid hsl(327, 90%, 28%);
+}
+
+/* Placeholder Animation */
+label {
+    position: absolute;
+    left: 35px;
+    top: 10px;
+    color: #757575;
+    font-size: 15px;
+    transition: 0.3s ease all;
+}
+
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+    top: -15px;
+    font-size: 13px;
+    color: hsl(327, 90%, 28%);
+}
+
+/* Forgot Password */
+.recover {
+    text-align: right;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.recover a {
+    text-decoration: none;
+    color: rgb(125, 125, 235);
+}
+
+.recover a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Button */
+.btn {
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    background: rgb(125, 125, 235);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #07001f;
+}
+
+/* Social Login */
+.or {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.icons {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.icons i {
+    color: rgb(125, 125, 235);
+    padding: 0.8rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 2px solid #dfe9f5;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.icons i:hover {
+    background: #07001f;
+    color: white;
+    border: 2px solid rgb(125, 125, 235);
+}
+
+/* Sign Up & Help Links */
+.links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+button {
+    color: rgb(125, 125, 235);
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .container {
+        width: 95%;
+    }
+}
+
+
+
